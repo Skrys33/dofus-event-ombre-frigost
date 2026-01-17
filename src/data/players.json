@@ -6,7 +6,7 @@
     { "name": "Burton", "defeated": [], "diedAt": null },
     { "name": "Vina y Boomie", "defeated": [], "diedAt": null },
     { "name": "Hof", "defeated": ["RM","MR","Ben"], "diedAt": null },
-    { "name": "Copilotte", "defeated": ["RM", "MR", "Ben", "Obsi"], "diedAt": "tengu" },
+    { "name": "Copilotte", "defeated": ["RM", "MR", "Ben", "Obsi", "Tengu"], "diedAt": "korri" },
     { "name": "Skrys", "defeated": [], "diedAt": null },
     { "name": "Lyra & ctln", "defeated": [], "diedAt": null },
     { "name": "Clown", "defeated": ["RM","MR"], "diedAt": null },
