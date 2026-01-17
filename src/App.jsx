@@ -60,6 +60,7 @@ function App() {
 function RankingPage() {
   const [query, setQuery] = useState('')
   const normalizedQuery = normalize(query.trim())
+  const lastUpdated = playersData.lastUpdated
 
   const rankedPlayers = useMemo(() => {
     const list = playersData.players
@@ -82,6 +83,7 @@ function RankingPage() {
       <div className="section-header">
         <div>
           <h2>Classement actuel</h2>
+          {lastUpdated ? <p className="last-updated">Derniere mise a jour: {lastUpdated}</p> : null}
         </div>
         <div className="search">
           <label htmlFor="player-search">Rechercher un joueur</label>

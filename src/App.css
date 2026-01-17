@@ -139,6 +139,12 @@ main,
   color: var(--ink-soft);
 }
 
+.last-updated {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
 .search {
   display: flex;
   flex-direction: column;
