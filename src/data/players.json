@@ -1,0 +1,11 @@
+{
+  "players": [
+    { "name": "Aerinne", "cleared": 9, "diedAt": "sylargh" },
+    { "name": "Bramk", "cleared": 6, "diedAt": "kolosso" },
+    { "name": "Celyne", "cleared": 3, "diedAt": "obsi" },
+    { "name": "Dramor", "cleared": 11, "diedAt": "missiz" },
+    { "name": "Erynn", "cleared": 13, "diedAt": null },
+    { "name": "Faylin", "cleared": 1, "diedAt": "mr" },
+    { "name": "Galan", "cleared": 8, "diedAt": "nileza" }
+  ]
+}
