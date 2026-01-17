@@ -10,16 +10,46 @@ const totalBosses = BOSSES.length
 
 const normalize = (value) => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
 
-const resolveCleared = (player) => {
-  if (Number.isInteger(player.cleared)) return player.cleared
-  if (Array.isArray(player.defeated)) return player.defeated.length
-  if (Number.isInteger(player.progress)) return player.progress
-  return 0
+const normalizeKey = (value) => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+
+const resolveDefeatedSet = (player) => {
+  if (!Array.isArray(player.defeated)) return new Set()
+  const byKey = new Map(BOSSES.map((boss) => [normalizeKey(boss.slug), boss.slug]))
+  BOSSES.forEach((boss) => {
+    byKey.set(normalizeKey(boss.name), boss.slug)
+  })
+  const slugs = player.defeated
+    .map((entry) => normalizeKey(String(entry)))
+    .map((key) => byKey.get(key))
+    .filter(Boolean)
+  return new Set(slugs)
+}
+
+const resolveCleared = (defeatedSet) => {
+  const baseOrder = ['rm', 'mr', 'ben', 'obsi', 'tengu', 'korri', 'kolosso', 'glour']
+  const flexible = ['nileza', 'sylargh', 'klime', 'missiz']
+  let cleared = 0
+
+  for (const boss of baseOrder) {
+    if (!defeatedSet.has(boss)) return cleared
+    cleared += 1
+  }
+
+  for (const boss of flexible) {
+    if (defeatedSet.has(boss)) cleared += 1
+  }
+
+  if (flexible.every((boss) => defeatedSet.has(boss)) && defeatedSet.has('comte')) {
+    cleared += 1
+  }
+
+  return cleared
 }
 
 const resolveDeathIndex = (player) => {
   if (!player.diedAt) return -1
-  return BOSSES.findIndex((boss) => boss.slug === player.diedAt)
+  const key = normalizeKey(String(player.diedAt))
+  return BOSSES.findIndex((boss) => normalizeKey(boss.slug) === key || normalizeKey(boss.name) === key)
 }
 
 function App() {
@@ -65,9 +95,10 @@ function RankingPage() {
   const rankedPlayers = useMemo(() => {
     const list = playersData.players
       .map((player) => {
-        const cleared = Math.min(resolveCleared(player), totalBosses)
+        const defeatedSet = resolveDefeatedSet(player)
+        const cleared = Math.min(resolveCleared(defeatedSet), totalBosses)
         const deathIndex = resolveDeathIndex(player)
-        return { ...player, cleared, deathIndex }
+        return { ...player, cleared, deathIndex, defeatedSet }
       })
       .sort((a, b) => {
         if (b.cleared !== a.cleared) return b.cleared - a.cleared
@@ -127,7 +158,7 @@ function RankingPage() {
 function PlayerRow({ player, rank }) {
   const status = (bossIndex) => {
     if (player.deathIndex === bossIndex) return 'death'
-    if (bossIndex < player.cleared) return 'cleared'
+    if (player.defeatedSet?.has(BOSSES[bossIndex].slug)) return 'cleared'
     return 'pending'
   }
 
