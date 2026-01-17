@@ -1,7 +1,7 @@
 {
   "players": [
     { "name": "Mallefisk", "defeated": [], "diedAt": null },
-    { "name": "Shura", "defeated": ["RM","MR","Ben","Obsi"], "diedAt": null },
+    { "name": "Shura", "defeated": ["RM","MR","Ben","Obsi", "Tengu"], "diedAt": null },
     { "name": "RigueurSacrificeDestin", "defeated": ["RM","MR"], "diedAt": null },
     { "name": "Burton", "defeated": [], "diedAt": null },
     { "name": "Vina y Boomie", "defeated": [], "diedAt": null },
@@ -10,7 +10,7 @@
     { "name": "Skrys", "defeated": [], "diedAt": null },
     { "name": "Lyra & ctln", "defeated": [], "diedAt": null },
     { "name": "Clown", "defeated": [], "diedAt": "rm" },
-    { "name": "AirMax TN", "defeated": ["RM"], "diedAt": null },
+    { "name": "AirMax TN", "defeated": ["RM", "MR"], "diedAt": null },
     { "name": "Ino", "defeated": [], "diedAt": null },
     { "name": "jeSaisPas", "defeated": [], "diedAt": null },
     { "name": "Exel", "defeated": ["RM", "MR", "Ben"], "diedAt": null },
@@ -21,7 +21,7 @@
     { "name": "Velib", "defeated": [], "diedAt": null },
     { "name": "Los pikmin de la muerta", "defeated": [], "diedAt": null },
     { "name": "Big flop & au lit", "defeated": [], "diedAt": null },
-    { "name": "Spyritae", "defeated": ["RM", "MR"], "diedAt": null },
+    { "name": "Spyritae", "defeated": ["RM", "MR", "Ben"], "diedAt": null },
     { "name": "Bhalzho", "defeated": ["RM"], "diedAt": null },
     { "name": "Les 159 dofawas", "defeated": [], "diedAt": null },
     { "name": "chin", "defeated": ["RM"], "diedAt": null },
