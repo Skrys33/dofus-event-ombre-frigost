@@ -175,6 +175,7 @@ input::placeholder {
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 20px 50px rgba(5, 5, 10, 0.5);
   animation: fadeUp 0.7s ease both;
+  overflow-y: hidden;
 }
 
 .ranking-table table {
