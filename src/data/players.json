@@ -1,11 +1,11 @@
 {
   "players": [
-    { "name": "Aerinne", "cleared": 9, "diedAt": "sylargh" },
-    { "name": "Bramk", "cleared": 6, "diedAt": "kolosso" },
-    { "name": "Celyne", "cleared": 3, "diedAt": "obsi" },
-    { "name": "Dramor", "cleared": 11, "diedAt": "missiz" },
-    { "name": "Erynn", "cleared": 13, "diedAt": null },
-    { "name": "Faylin", "cleared": 1, "diedAt": "mr" },
-    { "name": "Galan", "cleared": 8, "diedAt": "nileza" }
+    { "name": "Aerinne", "defeated": ["rm", "mr", "ben", "obsi", "tengu", "korri", "kolosso", "glour", "nileza"], "diedAt": "sylargh" },
+    { "name": "Bramk", "defeated": ["rm", "mr", "ben", "obsi", "tengu", "korri"], "diedAt": "kolosso" },
+    { "name": "Celyne", "defeated": ["rm", "mr", "ben"], "diedAt": "obsi" },
+    { "name": "Dramor", "defeated": ["rm", "mr", "ben", "obsi", "tengu", "korri", "kolosso", "glour", "nileza", "sylargh", "klime"], "diedAt": "missiz" },
+    { "name": "Erynn", "defeated": ["rm", "mr", "ben", "obsi", "tengu", "korri", "kolosso", "glour", "nileza", "sylargh", "klime", "missiz", "comte"], "diedAt": null },
+    { "name": "Faylin", "defeated": ["rm"], "diedAt": "mr" },
+    { "name": "Galan", "defeated": ["rm", "mr", "ben", "obsi", "tengu", "korri", "kolosso", "glour"], "diedAt": "nileza" }
   ]
 }

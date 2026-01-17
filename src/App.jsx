@@ -3,6 +3,7 @@ import { NavLink, Route, Routes } from 'react-router-dom'
 import playersData from './data/players.json'
 import { BOSSES } from './data/bosses'
 import backgroundVideo from './assets/background.mp4'
+import deathIcon from './assets/death.png'
 import './App.css'
 
 const totalBosses = BOSSES.length
@@ -51,7 +52,7 @@ function App() {
           <Route path="/rules" element={<RulesPage />} />
         </Routes>
       </main>
-      <footer className="footer">Statique, Vite + React, pret pour GitHub Pages.</footer>
+      <footer className="footer">Developed by Skrys.</footer>
     </div>
   )
 }
@@ -143,7 +144,13 @@ function PlayerRow({ player, rank }) {
         const state = status(index)
         return (
           <td key={boss.slug} className={`cell-boss ${state}`}>
-            {state === 'death' ? '☠' : state === 'cleared' ? '✔' : ''}
+            {state === 'death' ? (
+              <img src={deathIcon} alt="Mort" />
+            ) : state === 'cleared' ? (
+              '✔'
+            ) : (
+              ''
+            )}
           </td>
         )
       })}
