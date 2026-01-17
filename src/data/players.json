@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-17 21:49",
+  "lastUpdated": "2026-01-17 23:21",
   "players": [
     { "name": "Mallefisk", "defeated": [], "diedAt": null },
     { "name": "Shura", "defeated": [], "diedAt": null },
@@ -13,10 +13,10 @@
     { "name": "Clown", "defeated": ["RM","MR","Ben","Obsi"], "diedAt": null },
     { "name": "AirMax TN", "defeated": ["RM", "MR","Ben"], "diedAt": null },
     { "name": "Ino", "defeated": ["RM","MR","Ben"], "diedAt": null },
-    { "name": "jeSaisPas", "defeated": [], "diedAt": null },
+    { "name": "jeSaisPas", "defeated": ["RM"], "diedAt": null },
     { "name": "Exel", "defeated": ["RM", "MR", "Ben", "Obsi"], "diedAt": null },
     { "name": "Les p'tits nouveaux", "defeated": [], "diedAt": null },
-    { "name": "Coach diff", "defeated": ["RM", "MR","Ben","Obsi","Tengu","Korri","Kolosso"], "diedAt": null },
+    { "name": "Coach diff", "defeated": ["RM", "MR","Ben","Obsi","Tengu","Korri","Kolosso","Glour"], "diedAt": null },
     { "name": "Mythic", "defeated": [], "diedAt": null },
     { "name": "Reborn", "defeated": [], "diedAt": null },
     { "name": "Velib", "defeated": [], "diedAt": null },
