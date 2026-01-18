@@ -25,7 +25,7 @@
     { "name": "Spyritae", "defeated": ["RM", "MR", "Ben", "Obsi","Tengu","Korri","Kolosso"], "diedAt": null },
     { "name": "Bhalzho", "defeated": ["RM"], "diedAt": null },
     { "name": "Les 159 dofawas", "defeated": [], "diedAt": null },
-    { "name": "chin", "defeated": ["RM", "MR","Ben","Obsi"], "diedAt": null },
+    { "name": "chin", "defeated": ["RM", "MR","Ben","Obsi","Tengu"], "diedAt": null },
     { "name": "Fuck Shura", "defeated": ["RM", "MR", "Ben", "Obsi", "Tengu", "Korri", "Kolosso"], "diedAt": null },
     { "name": "Feur", "defeated": [], "diedAt": null },
     { "name": "Pohazy", "defeated": [], "diedAt": null },
