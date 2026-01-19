@@ -7,10 +7,52 @@ import deathIcon from './assets/death.png'
 import './App.css'
 
 const totalBosses = BOSSES.length
+const classIcons = import.meta.glob('./assets/classes/*.png', { eager: true, import: 'default' })
+const classIconMap = Object.fromEntries(
+  Object.entries(classIcons).map(([path, src]) => {
+    const key = path.split('/').pop()?.replace('.png', '')
+    return [key, src]
+  })
+)
+const classKeyMap = {
+  cra: 'cra',
+  eca: 'eca',
+  ecaflip: 'eca',
+  elio: 'elio',
+  eniripsa: 'eni',
+  eni: 'eni',
+  enutrof: 'enu',
+  enu: 'enu',
+  feca: 'feca',
+  forge: 'forge',
+  forgelance: 'forge',
+  hupper: 'hupper',
+  huppermage: 'hupper',
+  iop: 'iop',
+  osa: 'osa',
+  ouginak: 'ougi',
+  panda: 'panda',
+  pandawa: 'panda',
+  roub: 'roub',
+  roublard: 'roub',
+  sacri: 'sacri',
+  sacrieur: 'sacri',
+  sadida: 'sadi',
+  sadi: 'sadi',
+  sram: 'sram',
+  steamer: 'steamer',
+  xelor: 'xelor',
+  zobal: 'zobal'
+}
 
 const normalize = (value) => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
 
 const normalizeKey = (value) => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+const resolveClassIcon = (name) => {
+  if (!name) return null
+  const key = classKeyMap[normalizeKey(String(name))]
+  return key ? classIconMap[key] ?? null : null
+}
 
 const resolveDefeatedSet = (player) => {
   if (!Array.isArray(player.defeated)) return new Set()
@@ -166,11 +208,24 @@ function PlayerRow({ player, rank }) {
     <tr className="player-row" style={{ '--i': rank }}>
       <td className="cell-rank">#{rank}</td>
       <td className="cell-player">
-        <div className="player-name">{player.name}</div>
-        <div className="player-meta">
-          {player.cleared}/{totalBosses} boss
-          <br />
-          {player.deathIndex === -1 ? 'Toujours en vie' : `Mort face a ${BOSSES[player.deathIndex]?.name}`}
+        <div className="player-info">
+          <div className="player-name">{player.name}</div>
+          <div className="player-meta">
+            {player.cleared}/{totalBosses} boss
+            <br />
+            {player.deathIndex === -1 ? 'Toujours en vie' : `Mort face a ${BOSSES[player.deathIndex]?.name}`}
+          </div>
+        </div>
+        <div className="player-classes" aria-label="Classes jouees">
+          {Array.from({ length: 4 }).map((_, index) => {
+            const className = Array.isArray(player.classes) ? player.classes[index] : null
+            const iconSrc = resolveClassIcon(className)
+            return (
+              <span key={`${player.name}-class-${index}`} className="player-class">
+                {iconSrc ? <img src={iconSrc} alt={className ?? ''} /> : null}
+              </span>
+            )
+          })}
         </div>
       </td>
       {BOSSES.map((boss, index) => {
