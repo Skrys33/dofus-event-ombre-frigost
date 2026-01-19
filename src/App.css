@@ -38,17 +38,6 @@
   z-index: 0;
 }
 
-.app::after {
-  content: '';
-  position: absolute;
-  inset: 20vh 10vw auto auto;
-  width: 40vw;
-  height: 40vw;
-  border-radius: 50%;
-  background: linear-gradient(135deg, rgba(17, 17, 25, 0.08), rgba(17, 17, 25, 0));
-  filter: blur(0);
-  z-index: 0;
-}
 
 .hero,
 main,
@@ -276,14 +265,15 @@ input::placeholder {
 
 .player-classes {
   display: grid;
-  grid-template-columns: repeat(2, 28px);
+  grid-template-columns: repeat(2, 30px);
   gap: 6px;
   justify-items: center;
+  margin-right: 4px;
 }
 
 .player-class {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -292,8 +282,8 @@ input::placeholder {
 }
 
 .player-class img {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 

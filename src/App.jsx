@@ -295,10 +295,6 @@ function RulesPage() {
           Sur ce monde, la mort est définitive. Les imprudents disparaîtront dans le blizzard. Les
           survivants, eux, deviendront une légende gravée dans la glace.
         </p>
-        <p className="rules-note">
-          Les données proviennent du fichier <code>src/data/players.json</code>. Mettez-le à jour pour
-          refléter la progression.
-        </p>
       </div>
     </section>
   )
