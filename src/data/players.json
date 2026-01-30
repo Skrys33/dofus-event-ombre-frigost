@@ -1,38 +1,836 @@
-{
-  "lastUpdated": "2026-01-21 23:07",
-  "players": [
-    { "name": "Mallefisk", "defeated": [], "diedAt": null, "classes": ["Sram","Steamer","Sadida","Enutrof"] },
-    { "name": "Shura", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso","Glour"], "diedAt": null, "classes": ["Pandawa","Elio","Sadida","Osa"] },
-    { "name": "RigueurSacrificeDestin", "defeated": ["RM","MR","Ben"], "diedAt": null, "classes": ["Steamer","Zobal","Iop","Ouginak"] },
-    { "name": "Burton", "defeated": [], "diedAt": null, "classes": [] },
-    { "name": "Vina y Boomie", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso"], "diedAt": null, "classes": ["Eniripsa","Enutrof","Sadida","Sram"] },
-    { "name": "Hof", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso","Glour"], "diedAt": null, "classes": ["Sadida","Roublard","Enutrof","Elio"] },
-    { "name": "Copilotte", "defeated": ["RM","MR","Ben","Obsi","Tengu"], "diedAt": "korri", "classes": ["Zobal", "Osa", "Sacri", "Eniripsa"] },
-    { "name": "Skrys", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso"], "diedAt": "Glour", "classes": ["Hupper", "Pandawa", "Enutrof", "Steamer"] },
-    { "name": "Lyra & ctln", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso","Glour","Klime","Nileza","Sylargh"], "diedAt": null, "classes": ["Enu", "Sram", "Sadida", "Crâ"] },
-    { "name": "Clown", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso"], "diedAt": null, "classes": ["Sram", "Elio", "Zobal", "Forge"] },
-    { "name": "AirMax TN", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri"], "diedAt": null, "classes": ["Roublard", "Sadida", "Enutrof", "Pandawa"] },
-    { "name": "Ino", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso","Glour","Klime"], "diedAt": null, "classes": ["Sadida", "Enutrof", "Roublard", "Elio"] },
-    { "name": "jeSaisPas", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso"], "diedAt": "Glour", "classes": ["Ouginak", "Steamer", "Roublard", "Elio"] },
-    { "name": "Exel", "defeated": ["RM","MR","Ben","Obsi","Tengu"], "diedAt": null, "classes": ["Crâ", "Enutrof", "Zobal", "Iop"] },
-    { "name": "Les p'tits nouveaux", "defeated": ["RM","MR"], "diedAt": null, "classes": ["Enutrof", "Sadida", "Crâ", "Zobal"] },
-    { "name": "Coach diff", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso","Glour","Sylargh"], "diedAt": "nileza", "classes": ["Sadida", "Enutrof", "Osa", "Steamer"] },
-    { "name": "Mythic", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso","Glour"], "diedAt": null, "classes": ["Feca", "Enutrof", "Sadida", "Elio"] },
-    { "name": "Reborn", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso"], "diedAt": null, "classes": ["Pandawa", "Steamer", "Crâ", "Feca"] },
-    { "name": "Velib", "defeated": [], "diedAt": null, "classes": ["Elio", "Enutrof", "Sadida", "Feca"] },
-    { "name": "Los pikmin de la muerta", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso"], "diedAt": null, "classes": ["Crâ", "Enutrof", "Steamer", "Feca"] },
-    { "name": "Big flop & au lit", "defeated": [], "diedAt": null, "classes": ["Crâ", "Pandawa", "Sadida", "Feca"] },
-    { "name": "Spyritae", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso","Glour","Sylargh"], "diedAt": null, "classes": ["Feca", "Zobal", "Eca", "Sadida"] },
-    { "name": "Bhalzho", "defeated": ["RM","MR","Ben"], "diedAt": null, "classes": ["Enutrof", "Forgelance", "Steamer", "Sadida"] },
-    { "name": "Les 159 dofawas", "defeated": ["RM","MR","Ben","Obsi","Tengu"], "diedAt": null, "classes": ["Enutrof", "Crâ", "Steamer", "Sadida"] },
-    { "name": "chin", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso"], "diedAt": null, "classes": ["Crâ", "Sadida", "Steamer", "Zobal"] },
-    { "name": "Fuck Shura", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso","Glour","Klime","Sylargh"], "diedAt": null, "classes": ["Sadida", "Osa", "Pandawa", "Roublard"] },
-    { "name": "Feur", "defeated": [], "diedAt": null, "classes": ["Feca", "Crâ", "Sadida", "Enutrof"] },
-    { "name": "Pohazy", "defeated": [], "diedAt": null, "classes": ["Osa", "Sadida", "Enutrof", "Zobal"] },
-    { "name": "Unexpected", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso","Glour","Sylargh","Klime","Nileza","Missiz","Comte"], "diedAt": null, "classes": ["Sadida", "Enutrof", "Elio", "Osa"] },
-    { "name": "Disciple", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso"], "diedAt": null, "classes": ["Sadida", "Feca", "Elio", "Pandawa"] },
-    { "name": "Frig'Omst", "defeated": ["RM","MR","Ben","Obsi","Tengu","Korri","Kolosso","Glour"], "diedAt": null, "classes": ["Osa", "Sadida", "Zobal", "Elio"] },
-    { "name": "Destrok", "defeated": [], "diedAt": null, "classes": ["Osa", "Crâ", "Enutrof", "Sadida"] },
-    { "name": "Goats", "defeated": [], "diedAt": null, "classes": ["Sram", "Elio", "Crâ", "Sadida"] }
-  ]
+﻿{
+    "lastUpdated":  "2026-01-30 21:01",
+    "players":  [
+                    {
+                        "name":  "Mallefisk",
+                        "defeated":  [
+
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Sram",
+                                        "Steamer",
+                                        "Sadida",
+                                        "Enutrof"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Shura",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Klime",
+                                         "Nileza",
+                                         "Sylargh",
+                                         "Missiz"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Pandawa",
+                                        "Elio",
+                                        "Sadida",
+                                        "Osa"
+                                    ],
+                        "turns":  {
+                                      "klime":  23,
+                                      "missiz":  19,
+                                      "nileza":  29,
+                                      "sylargh":  17
+                                  }
+                    },
+                    {
+                        "name":  "RigueurSacrificeDestin",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Steamer",
+                                        "Zobal",
+                                        "Iop",
+                                        "Ouginak"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Ice-climbers",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Elio",
+                                        "Crâ",
+                                        "Osa",
+                                        "Sadida"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Vina y Boomie",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Eniripsa",
+                                        "Enutrof",
+                                        "Sadida",
+                                        "Sram"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Hof",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Sylargh",
+                                         "Klime",
+                                         "Nileza",
+                                         "Missiz"
+                                     ],
+                        "diedAt":  "Comte",
+                        "classes":  [
+                                        "Sadida",
+                                        "Roublard",
+                                        "Enutrof",
+                                        "Elio"
+                                    ],
+                        "turns":  {
+                                      "klime":  32,
+                                      "missiz":  46,
+                                      "nileza":  18,
+                                      "sylargh":  39
+                                  }
+                    },
+                    {
+                        "name":  "Copilotte",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu"
+                                     ],
+                        "diedAt":  "korri",
+                        "classes":  [
+                                        "Zobal",
+                                        "Osa",
+                                        "Sacri",
+                                        "Eniripsa"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Skrys",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso"
+                                     ],
+                        "diedAt":  "Glour",
+                        "classes":  [
+                                        "Hupper",
+                                        "Pandawa",
+                                        "Enutrof",
+                                        "Steamer"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Lyra \u0026 ctln",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Klime",
+                                         "Nileza",
+                                         "Sylargh",
+                                         "Missiz",
+                                         "Comte"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Enu",
+                                        "Sram",
+                                        "Sadida",
+                                        "Crâ"
+                                    ],
+                        "turns":  {
+                                      "klime":  28,
+                                      "missiz":  21,
+                                      "nileza":  18,
+                                      "sylargh":  19
+                                  }
+                    },
+                    {
+                        "name":  "Clown",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Klime",
+                                         "Sylargh"
+                                     ],
+                        "diedAt":  "Nileza",
+                        "classes":  [
+                                        "Sram",
+                                        "Elio",
+                                        "Zobal",
+                                        "Forge"
+                                    ],
+                        "turns":  {
+                                      "klime":  74,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  34
+                                  }
+                    },
+                    {
+                        "name":  "AirMax TN",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Klime",
+                                         "Sylargh"
+                                     ],
+                        "diedAt":  "Nileza",
+                        "classes":  [
+                                        "Roublard",
+                                        "Sadida",
+                                        "Enutrof",
+                                        "Pandawa"
+                                    ],
+                        "turns":  {
+                                      "klime":  27,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  19
+                                  }
+                    },
+                    {
+                        "name":  "Ino",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Klime",
+                                         "Nileza",
+                                         "Sylargh"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Sadida",
+                                        "Enutrof",
+                                        "Roublard",
+                                        "Elio"
+                                    ],
+                        "turns":  {
+                                      "klime":  29,
+                                      "missiz":  null,
+                                      "nileza":  30,
+                                      "sylargh":  32
+                                  }
+                    },
+                    {
+                        "name":  "jeSaisPas",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso"
+                                     ],
+                        "diedAt":  "Glour",
+                        "classes":  [
+                                        "Ouginak",
+                                        "Steamer",
+                                        "Roublard",
+                                        "Elio"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Exel",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Crâ",
+                                        "Enutrof",
+                                        "Zobal",
+                                        "Iop"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Les p\u0027tits nouveaux",
+                        "defeated":  [
+                                         "RM",
+                                         "MR"
+                                     ],
+                        "diedAt":  "Ben",
+                        "classes":  [
+                                        "Enutrof",
+                                        "Sadida",
+                                        "Crâ",
+                                        "Zobal"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Coach diff",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Sylargh"
+                                     ],
+                        "diedAt":  "Nileza",
+                        "classes":  [
+                                        "Sadida",
+                                        "Enutrof",
+                                        "Osa",
+                                        "Steamer"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  12
+                                  }
+                    },
+                    {
+                        "name":  "Mythic",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Sylargh"
+                                     ],
+                        "diedAt":  "Klime",
+                        "classes":  [
+                                        "Feca",
+                                        "Enutrof",
+                                        "Sadida",
+                                        "Elio"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  26
+                                  }
+                    },
+                    {
+                        "name":  "Reborn",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Sylargh",
+                                         "Klime"
+                                     ],
+                        "diedAt":  "Missiz",
+                        "classes":  [
+                                        "Pandawa",
+                                        "Steamer",
+                                        "Crâ",
+                                        "Feca"
+                                    ],
+                        "turns":  {
+                                      "klime":  48,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  30
+                                  }
+                    },
+                    {
+                        "name":  "Velib",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Elio",
+                                        "Enutrof",
+                                        "Sadida",
+                                        "Feca"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Los pikmin de la muerta",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour"
+                                     ],
+                        "diedAt":  "Nileza",
+                        "classes":  [
+                                        "Crâ",
+                                        "Enutrof",
+                                        "Steamer",
+                                        "Feca"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Big flop \u0026 au lit",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Crâ",
+                                        "Pandawa",
+                                        "Sadida",
+                                        "Feca"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Spyritae",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Sylargh"
+                                     ],
+                        "diedAt":  "Missiz",
+                        "classes":  [
+                                        "Feca",
+                                        "Zobal",
+                                        "Eca",
+                                        "Sadida"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  18
+                                  }
+                    },
+                    {
+                        "name":  "Bhalzho",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Enutrof",
+                                        "Forgelance",
+                                        "Steamer",
+                                        "Sadida"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Les 159 dofawas",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Enutrof",
+                                        "Crâ",
+                                        "Steamer",
+                                        "Sadida"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "chin",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Crâ",
+                                        "Sadida",
+                                        "Steamer",
+                                        "Zobal"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Fuck Shura",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Klime",
+                                         "Sylargh",
+                                         "Nileza",
+                                         "Missiz"
+                                     ],
+                        "diedAt":  "Comte",
+                        "classes":  [
+                                        "Sadida",
+                                        "Osa",
+                                        "Pandawa",
+                                        "Roublard"
+                                    ],
+                        "turns":  {
+                                      "klime":  29,
+                                      "missiz":  27,
+                                      "nileza":  27,
+                                      "sylargh":  14
+                                  }
+                    },
+                    {
+                        "name":  "Feur",
+                        "defeated":  [
+
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Feca",
+                                        "Crâ",
+                                        "Sadida",
+                                        "Enutrof"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Pohazy",
+                        "defeated":  [
+
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Osa",
+                                        "Sadida",
+                                        "Enutrof",
+                                        "Zobal"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Unexpected",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Sylargh",
+                                         "Klime",
+                                         "Nileza",
+                                         "Missiz",
+                                         "Comte"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Sadida",
+                                        "Enutrof",
+                                        "Elio",
+                                        "Osa"
+                                    ],
+                        "turns":  {
+                                      "klime":  666,
+                                      "missiz":  20,
+                                      "nileza":  36,
+                                      "sylargh":  16
+                                  }
+                    },
+                    {
+                        "name":  "Disciple",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Sadida",
+                                        "Feca",
+                                        "Elio",
+                                        "Pandawa"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Frig\u0027Oms\u0027t",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben",
+                                         "Obsi",
+                                         "Tengu",
+                                         "Korri",
+                                         "Kolosso",
+                                         "Glour",
+                                         "Missiz",
+                                         "Sylargh",
+                                         "Klime",
+                                         "Nileza",
+                                         "Comte"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Osa",
+                                        "Sadida",
+                                        "Zobal",
+                                        "Elio"
+                                    ],
+                        "turns":  {
+                                      "klime":  28,
+                                      "missiz":  34,
+                                      "nileza":  47,
+                                      "sylargh":  18
+                                  }
+                    },
+                    {
+                        "name":  "Destrok",
+                        "defeated":  [
+                                         "RM",
+                                         "MR",
+                                         "Ben"
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Osa",
+                                        "Crâ",
+                                        "Enutrof",
+                                        "Sadida"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    },
+                    {
+                        "name":  "Goats",
+                        "defeated":  [
+
+                                     ],
+                        "diedAt":  null,
+                        "classes":  [
+                                        "Sram",
+                                        "Elio",
+                                        "Crâ",
+                                        "Sadida"
+                                    ],
+                        "turns":  {
+                                      "klime":  null,
+                                      "missiz":  null,
+                                      "nileza":  null,
+                                      "sylargh":  null
+                                  }
+                    }
+                ]
 }

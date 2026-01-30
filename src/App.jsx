@@ -48,6 +48,11 @@ const classKeyMap = {
 const normalize = (value) => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
 
 const normalizeKey = (value) => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+const turnBosses = new Set(['klime', 'missiz', 'nileza', 'sylargh'])
+const resolveTurnValue = (value) => {
+  const number = Number(value)
+  return Number.isFinite(number) && number > 0 ? number : null
+}
 const resolveClassIcon = (name) => {
   if (!name) return null
   const key = classKeyMap[normalizeKey(String(name))]
@@ -92,6 +97,24 @@ const resolveDeathIndex = (player) => {
   if (!player.diedAt) return -1
   const key = normalizeKey(String(player.diedAt))
   return BOSSES.findIndex((boss) => normalizeKey(boss.slug) === key || normalizeKey(boss.name) === key)
+}
+
+const resolveAverageTurns = (player, defeatedSet) => {
+  const turns = player?.turns ?? null
+  if (!turns) return Number.POSITIVE_INFINITY
+
+  let total = 0
+  let count = 0
+
+  for (const slug of turnBosses) {
+    if (!defeatedSet.has(slug)) continue
+    const value = resolveTurnValue(turns[slug])
+    if (value === null) continue
+    total += value
+    count += 1
+  }
+
+  return count > 0 ? total / count : Number.POSITIVE_INFINITY
 }
 
 function App() {
@@ -140,10 +163,12 @@ function RankingPage() {
         const defeatedSet = resolveDefeatedSet(player)
         const cleared = Math.min(resolveCleared(defeatedSet), totalBosses)
         const deathIndex = resolveDeathIndex(player)
-        return { ...player, cleared, deathIndex, defeatedSet }
+        const averageTurns = resolveAverageTurns(player, defeatedSet)
+        return { ...player, cleared, deathIndex, defeatedSet, averageTurns }
       })
       .sort((a, b) => {
         if (b.cleared !== a.cleared) return b.cleared - a.cleared
+        if (a.averageTurns !== b.averageTurns) return a.averageTurns - b.averageTurns
         return a.name.localeCompare(b.name)
       })
 
@@ -230,12 +255,14 @@ function PlayerRow({ player, rank }) {
       </td>
       {BOSSES.map((boss, index) => {
         const state = status(index)
+        const isTurnBoss = turnBosses.has(boss.slug)
+        const turnValue = resolveTurnValue(player.turns?.[boss.slug])
         return (
           <td key={boss.slug} className={`cell-boss ${state}`}>
             {state === 'death' ? (
               <img src={deathIcon} alt="Mort" />
             ) : state === 'cleared' ? (
-              '✔'
+              isTurnBoss ? (turnValue ?? '') : '✔'
             ) : (
               ''
             )}
