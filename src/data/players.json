@@ -1,5 +1,5 @@
 ﻿{
-    "lastUpdated":  "2026-01-30 21:01",
+    "lastUpdated":  "2026-02-01 21:29",
     "players":  [
                     {
                         "name":  "Mallefisk",
@@ -34,7 +34,8 @@
                                          "Klime",
                                          "Nileza",
                                          "Sylargh",
-                                         "Missiz"
+                                         "Missiz",
+                                         "Comte"
                                      ],
                         "diedAt":  null,
                         "classes":  [
@@ -81,9 +82,13 @@
                                          "Tengu",
                                          "Korri",
                                          "Kolosso",
-                                         "Glour"
+                                         "Glour",
+                                         "Klime",
+                                         "Sylargh",
+                                         "Missiz",
+                                         "Nileza"
                                      ],
-                        "diedAt":  null,
+                        "diedAt":  "Comte",
                         "classes":  [
                                         "Elio",
                                         "Crâ",
@@ -91,10 +96,10 @@
                                         "Sadida"
                                     ],
                         "turns":  {
-                                      "klime":  null,
-                                      "missiz":  null,
-                                      "nileza":  null,
-                                      "sylargh":  null
+                                      "klime":  30,
+                                      "missiz":  33,
+                                      "nileza":  19,
+                                      "sylargh":  21
                                   }
                     },
                     {
@@ -107,7 +112,12 @@
                                          "Tengu",
                                          "Korri",
                                          "Kolosso",
-                                         "Glour"
+                                         "Glour",
+                                         "Missiz",
+                                         "Nileza",
+                                         "Klime",
+                                         "Sylargh",
+                                         "Comte"
                                      ],
                         "diedAt":  null,
                         "classes":  [
@@ -117,10 +127,10 @@
                                         "Sram"
                                     ],
                         "turns":  {
-                                      "klime":  null,
-                                      "missiz":  null,
-                                      "nileza":  null,
-                                      "sylargh":  null
+                                      "klime":  31,
+                                      "missiz":  29,
+                                      "nileza":  10,
+                                      "sylargh":  13
                                   }
                     },
                     {
@@ -524,9 +534,10 @@
                                          "RM",
                                          "MR",
                                          "Ben",
-                                         "Obsi"
+                                         "Obsi",
+                                         "Tengu"
                                      ],
-                        "diedAt":  null,
+                        "diedAt":  "korri",
                         "classes":  [
                                         "Crâ",
                                         "Pandawa",
