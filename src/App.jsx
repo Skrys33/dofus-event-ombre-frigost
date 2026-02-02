@@ -172,8 +172,19 @@ function RankingPage() {
         return a.name.localeCompare(b.name)
       })
 
-    if (!normalizedQuery) return list
-    return list.filter((player) => normalize(player.name).includes(normalizedQuery))
+    const fullClearCount = list.reduce((count, player) => {
+      return player.cleared === totalBosses ? count + 1 : count
+    }, 0)
+
+    const ranked = list.map((player, index) => {
+      const isFullClear = player.cleared === totalBosses
+      const rank = isFullClear ? 1 : index + 1
+      const isTied = isFullClear && fullClearCount > 1
+      return { ...player, rank, isTied }
+    })
+
+    if (!normalizedQuery) return ranked
+    return ranked.filter((player) => normalize(player.name).includes(normalizedQuery))
   }, [normalizedQuery])
 
   return (
@@ -213,7 +224,7 @@ function RankingPage() {
           </thead>
           <tbody>
             {rankedPlayers.map((player, index) => (
-              <PlayerRow key={player.name} player={player} rank={index + 1} />
+              <PlayerRow key={player.name} player={player} order={index + 1} />
             ))}
           </tbody>
         </table>
@@ -222,7 +233,7 @@ function RankingPage() {
   )
 }
 
-function PlayerRow({ player, rank }) {
+function PlayerRow({ player, order }) {
   const status = (bossIndex) => {
     if (player.deathIndex === bossIndex) return 'death'
     if (player.defeatedSet?.has(BOSSES[bossIndex].slug)) return 'cleared'
@@ -230,8 +241,8 @@ function PlayerRow({ player, rank }) {
   }
 
   return (
-    <tr className="player-row" style={{ '--i': rank }}>
-      <td className="cell-rank">#{rank}</td>
+    <tr className="player-row" style={{ '--i': order }}>
+      <td className="cell-rank">#{player.rank}</td>
       <td className="cell-player">
         <div className="player-info">
           <div className="player-name">{player.name}</div>
